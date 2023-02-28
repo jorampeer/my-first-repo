@@ -1,0 +1,255 @@
+gvi $a/{arbel_top_tab0,arbel_clkgen_tab0,arbel_dft_tab0,arbel_io_tab0,arbel_espi_iowrap_taa0,arbel_gpiox2_iowrap_taa0,arbel_lvi3c_iowrap_taa0,arbel_i2c_iowrap_taa0}.v
+gvi $a/{arbel_top_tab0,arbel_clkgen_tab0,arbel_dft_tab0,arbel_io_tab0,arbel_gpiox2_iowrap_taa0,arbel_lvi3c_iowrap_taa0,arbel_i2c_iowrap_taa0}.v
+gvi $a/{arbel_top_tab0,arbel_clkgen_tab0,arbel_dft_tab0,arbel_io_tab0,arbel_lvi3c_iowrap_taa0,arbel_i2c_iowrap_taa0}.v
+h | g gvi | g _io_
+gvi $a/arbel_aes_engine_top_taa0.v
+gvi crp_aes/info/l_hvh_list/modes_ahb_wrapper.vhd
+gvi $a/arbel_tipsys_taa0.v
+history -h | g ibis >> history
+history -h | g ibis | +
+wc /work_cd2/ocohen/mrider17/IBIS/work_Apr2019/NPCX797H*/the.table
+pushd /tanap1/proj_dv1/arbel_dv/joram/ver_z11_02/fiu0_status_poll
+ssh taln63
++ /tanap1/proj_dv1/arbel_dv/joram/ver_z11_02/fiu0_status_poll/fiu0_status_poll.espi.high.log
+lsd /net/taln70/home
+lsd /net/taln64/home
+lsd /net/taln71
+lsd /net/taln63/home
+lsd /net/taln63/home/users/joram/arbel/ver_z11_02/fiu0_status_poll
+history -h | tail -20 >> history
+tail -20 >> history
+cd /work_pall/joram/
+find /work_pall/palladium/DataBase/arbel/a.1/arbel_a1_04 -name '*jedec_ddr4_*gb*' -ls
+find /work_pall/palladium/DataBase/arbel/a.1/arbel_a1_04 -name '*jedec_ddr4_2gb_*' -ls
+gvi /work_pall/palladium/DataBase/arbel/a.1/arbel_a1_04/input_data/netlist/ddr4/jedec_ddr4_2gb_16.vgp
+find /work_pall/palladium/DataBase/arbel/a.1/arbel_a1_04 -name '*jedec_ddr4_2gb_16*' -ls
+find /work_pall/palladium/DataBase/arbel/a.1/arbel_a1_04/input_data/src -name '*jedec_ddr4_2gb_16*' -ls
+gvi /work_pall/palladium/DataBase/arbel/a.1/arbel_a1_04/input_data/src/local_sim/arbel_wrapper_taa0.v
+m
++ .history
+gvi history
+cd 12May2022_Synopsys/
+cd Uploads/
+cd Issue_A1_Scan/
+history -h >> history
+run_verdi -fsdb nspiload_porst.fsdb -rc nspiload.rc
+h | g run_verdi
+pushd /work_pall/bissacha/arbel_a1_04/sw/debug/
+lsd /work_pall/*/112/*/debug
+run_verdi -rc /work_pall/joram/GMAC_ECC_ddr4.rc -fsdb /work_pall/bissacha/112/all_4c/debug/trace_loopback2.fsdb
+run_verdi -rc /work_pall/joram/GMAC_ECC_ddr4.rc -fsdb trace_ecc_cpu4.fsdb
+lsd *fsdb
+run_verdi -rc /work_pall/joram/GMAC_ECC_ddr4.rc -fsdb trace_ecc_cpu2.fsdb
+hostname
+run_verdi -fsdb trace_ecc_cpu.fsdb -rc /work_pall/joram/GMAC_ECC_ddr4.rc
+gh run_verdi | g fsdb
+gh run_verdi
+run_verdi
+++ /work_pall/palladium/DataBase/arbel/a.1/arbel_112/input_data/debug/rc/
+pushd /work_pall/bissacha/112/all_4c/debug/
+run_verdi -fsdb trace_bad_vcd.fsdb
+pushd /work_pall/sshnirer/208/compile_SB02_grfx/debug
+gvi $a/{arbel_core_tab0,arbel_ahb_gmac_taa0,DWC_gmac_top_gma0}.v
+g AV_ENABLE $a/DWC_gmac* | g -v '://' | g -v 'ifdef|undef'
+g AV_ENABLE $a/DWC_gmac* | g -v '://' | g -v 'ifdef|undef' | +
+g AV_ENABLE $a/DWC_gmac* | g -v '://' | g -v 'ifdef' | +
+g AV_ENABLE $a/DWC_gmac* | g -v '://' | +
+g AV_ENABLE $a/DWC_gmac* | +
+g AV_ENABLE $a/DWC_gmac*
+echo arbel_core_tab0,arbel_ahb_gmac_taa0,DWC_gmac_top_gma0
+get_block_hierarchy_info -v behavioral -b arbel_top_tab0 -forward -fullpath -prefer_local | tr . ',' | g gmac | +
+get_block_hierarchy_info -v behavioral -b arbel_top_tab0 -forward -fullpath -prefer_local | tr . ',' | +
+lsd */*/run/*fsdb
+lsd */run/*fsdb
+lsd */run
+lsd run
+pushd ~arbel_dv/joram/ver_z11_02/fiu0_status_poll
+gvi ~/.login
+history -h | tail -10 >> history
+cd ~arbel_dv/joram/ver_z11_02/fiu0_status_poll
+setproj arbel
+title DV HL $cwd:t
+history -L history
+pushd /tanap1/proj_dv1/arbel_dv/joram
+find . -name history
+find . -name history -ls | xarg echo
+find . -name history -ls | xargs echo
+find . -name history | xargs echo
+find . -name history | xargs -IXXX echo XXX '\n'
+find . -name history | xargs -IXXX echo XXX
+find . -name history | xargs -IXXX egrep title XXX
+find . -name '*.rc' -ls
+find . -name '*.rc' -ls | +
+find . -name '*.rc' -ls | g -v '2018|2019|2020'
+find . -name '*.rc' -ls | g -v '2018|2019|2020' | +
+find . -name '*.rc' -ls | g -v '2018|2019|2020' | g -v dft
+find . -name '*.rc' -ls | g -v '2018|2019|2020' | g -v 'dft|z11'
+find . -name '*.rc' -ls | g -v '2018|2019|2020' | g -v 'dft|z11|fast|slow'
+find . -name '*.rc' -ls | g -v '2018|2019|2020' | g -v 'dft|z11|fast|slow|108'
+find . -name '*.rc' -ls | g -v '2018|2019|2020' | g -v 'dft|z11|fast|slow|108|gl'
+find . -name '*high*' -ls | g -v '2018|2019|2020' | g -v 'dft|z11|fast|slow|108|gl'
+find . -name '*.log' -ls | g -v '2018|2019|2020' | g -v 'dft|z11|fast|slow|108|gl'
+find . -name '*.log' -ls | g -v '2018|2019' | g -v 'dft|z11|fast|slow|108|gl'
+find . -name '*.log' -ls | g -v '2018|2019' | g -v 'dft|z11|fast|slow|108|gl' | +
+lsd */*i3c*
+find . -name '*.log' -ls | g -v '2018|2019|2020' | g -v 'dft|fast|slow|108|gl'
+find . -name '*.log' -ls | g -v '2018|2019|2020' | g -v 'dft|fast|slow|108|gl' | +
+find . -name '*high.log' -ls | g -v '2018|2019|2020' | g -v 'dft|fast|slow|108|gl' | +
+find . -name 'history' -ls | g -v '2018|2019|2020' | g -v 'dft|fast|slow|108|gl' | +
+pushd ./ver_z11_02/fiu0_status_poll
+lsd ../i3c_0_master_sdr_transmit/history
+lsd ../*/history
+g dvtool ../fiu0_fcs0_fcs1/history
+g setproj ../fiu0_fcs0_fcs1/history
++ *high.log
+gvi *high.log
+dvtool -ver z11_02 -load -nos -dump -espi
+bg
+alias ++
+ls -tlg *
+ls -tl *
+ls *
+man ls
+ls -F *
+ls -F .
+ls -F . | +
+ls -F . | g -v '/$'
+ls -F . | g -v '/$|@$'
+ls -F . | g -v '/$|@$' | xargs ls -tdl
+ls -F . | g -v '/$' | xargs ls -tdl
+ls -tdl run
+ls run
+ls -l run
+jobs
+kill %1
+ls
+rm run
+++ /tanap1/proj_dv1/arbel_dv/joram/ver_z11_02/fiu0_status_poll/
+title PD $cwd:t
+++
+popd
+pushd /work_pall/hilak/Arbel/arbel_b1/all_4c/debug/save_fsdb
+lsd *.rc
+lsd *.fsdb
+run_verdi -fsdb trace_fio0_incr0.fsdb -rc /work_pall/joram/cop_vs_a35_RAM2_OTOP.rc
+cd ..
+run_verdi -fsdb save_fsdb/trace_fio0_incr0.fsdb -rc /work_pall/joram/cop_vs_a35_RAM2_OTOP.rc
+run_verdi -fsdb save_fsdb/trace_fio0_incr1.fsdb -rc /work_pall/joram/cop_vs_a35_RAM2_OTOP.rc
+run_verdi -fsdb save_fsdb/trace_fio0_incr1.fsdb -rc /work_pall/joram/cop_vs_a35_RAM2_OTOP_AHB18_SPI0.rc
+++ /work_pall/joram/
+setproj hermon
+realpath * | +
+realpath * | & not found'
+realpath * | & 'not found'
+realpath * | & g 'not found'
+realpath * & g 'found'
+realpath * | & g 'found'
+lsd *tamod*
+realpath *
+lsd urt
+lsdd lpc
+lsd /projects/tamodsh
+lsd /projects/tamodsh/a.0
+realpath * | & g real
+realpath * | & g real | tr "'" ' '~
+realpath * | & g real | tr "'" ' ' | wd 2
+lsd $a/$i
+lsdd $a/$i
+lsdd cfg
+lsdd $i/warm
+lsd /projects/tamodsh/a.0/warm/cfg/
+lsd /projects/tamodsh/a.0/warm/cfg
+rm LOG
+rm 1
+touch 1
+echo $i
+lsdd $i
+ls -tdl /projects/hermon/a.3/warm/$i/
+ls -tdl /projects/hermon/a.3/warm/$i
+ls -tdl /projects/hermon/a.3/warm/$i >> 1
+foreach i ( `realpath * | & g real | tr "'" ' ' | wd 2` )
+wc 1
+gvi 1
+- 1 | wd 11 | +
+ls `- 1 | wd 11`
+g dishon 1
+lsd ~tamodh
+lsd ~dishon
+h
+get_block_hierarchy_info -v behavioral -b poleg_top_tab2 -forward -fullpath -prefer_local | tr . , | g apb2sib
+get_block_hierarchy_info -v behavioral -b poleg_top_tab2 -forward -fullpath -prefer_local | tr . , | g sib | +
+lsd $a/*2sib*
+get_block_hierarchy_info -v behavioral -b poleg_top_tab2 -forward -fullpath -prefer_local | tr . , | g sio | +
+gvi $a/{poleg_core_tab2,poleg_sio_tab2}.v
+setproj
+top
+lsd ~tavor
+lsd /project/tavor
+lsd /projects/tavor
+++ /projects/tavor/
+++ /proj/eng/tavor
+lsd ~arbeldv
+lsd ~arbel_dv
+++ ~arbeltst/
+nap1/proj_dv1/arbel_dv/joram
+ssh taln71
+cd
+ls -ld .
+ls -ltr /
+ls -ltr homes
+ls -ltr tmp
+ls -ltr run
+ls -ltr Files/
+ls -ltr armSocrates/
+ls -ltr armSocrates/configuration/
+ls -ltr armSocrates/jython/
+ls -ltr armSocrates/jython/packages/
+ls -ltr | tail
+exit
+cd /work_cd2/joram/work.arbel.a.1/play/a
+\rm -rf Subcontractors
+git clone /work_cd2/joram/work.arbel.a.1/play/Subcontractors Subcontractors_a
+cd Subcontractors_a
+git remote -v
+less ~ayashfe/.gitconfig
+git fetch
+ls -altr
+git rebase
+git pull
+ls -ltr
+history -h | nawk '/play/' | wc
+history -h | nawk '/play/,' | wc
+history -h | nawk '/play/,0' | wc
+history -h | nawk '/play/,0' > history
+git version
+pbcopy
+cd ../..
+vi a
+vi aa
+gvi aaa
+history
+lll
+pwd
+git clone eb 15 10:38 b/
+arbel play ( taln81 ) 246== > lll
+total 12
+drwxr-sr-x 3 arbel 4096 Feb 21 07:06 a/
+drwxrwxrwx 6 engineer 4096 Feb 15 10:57 Subcontractors/
+drwxr-sr-x 3 arbel 4096 Feb 15 10:38 b/
+arbel play ( taln81 ) 247== >
+git clone https://github.com/jorampeer/my-first-repo.git
+cd my-first-repo/
+touch test4.txt
+git add test4.txt
+git commit "test4.txt"
+git commit -m "test4.txt"
+ll
+git status
+git push test4.txt
+git config user.email "joram.peer@nuvoton.com"
+git config user.name "Joram Peer"
+git push test4.txt -m "test4"
+git push -m "test4"
+-
+git push
+history -h > history
