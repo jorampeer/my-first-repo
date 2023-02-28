@@ -253,3 +253,53 @@ git push -m "test4"
 -
 git push
 history -h > history
+git clone https://github.com/jorampeer/my-first-repo.git
+touch test4.txt
+git add test4.txt
+git commit "test4.txt"
+git commit -m "test4.txt"
+git push test4.txt
+git config user.email "joram.peer@nuvoton.com"
+git config user.name "Joram Peer"
+git push test4.txt -m "test4"
+git push -m "test4"
+history -h > history
+git add history
+git commit -m history
+git push
+title GITHUB LAB
+cd ..
+git clone https://github.com/jorampeer/my-second-repo.git
+pwd
+cd my-first-repo/
+git checkout -B feature/lesson
+vi test4.txt
+gvi test4.txt
+touch test2.txt
+gvi test2.txt
+rm *~
+git commit -a -m "test2 test4"
+-
+git baranch main
+git branch main
+ll test*
+- test4.txt
+- test2.txt
+git checkout feature/lesson
+git push -u origin feature/lesson
+git checkout -B feature/lesson2
+gvi test3
+git branch
+rm test3
+git checkout feature/lesson2
+tm test4.txt
+rm test4.txt
+git commit -a -m "rm test4.txt"
+git push -u origin feature/lesson2
+git checkout main
+git status
+git pull
+ll
+history -h | +
+history -h | nawk '/jorampeer/,0' | +
+history -h | nawk '/jorampeer/,0' >> history
